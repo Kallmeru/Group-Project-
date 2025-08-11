@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HanaHanabi Products</title>
+  <link rel="stylesheet" href="/Products/style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="products.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>HanaHanabi Products</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="filters">
+    <button class="filter-btn" data-category="all">All</button>
+    <button class="filter-btn" data-category="men">Men</button>
+    <button class="filter-btn" data-category="women">Women</button>
+    <button class="filter-btn" data-category="new">New Arrivals</button>
+  </section>
+
+  <section class="products-grid">
+    <!-- Product cards will go here -->
+     <!--Shirts-->
+<div class="product-card" data-category="men">
+  <img src="images/shirt1.jpg" alt="Shirt 1" />
+  <h3>Shirt 1</h3>
+  <p>$29.99</p>
+  <button class="add-to-cart" data-name="cheapest shirt, Asian ?" data-price="29.99">Add to Cart</button>
+</div>
+
+<div class="product-card" data-category="men">
+  <img src="images/shirt2.jpg" alt="Shirt 2" />
+  <h3>Shirt 2</h3>
+  <p>$39.99</p>
+  <button class="add-to-cart" data-name="0 w o --" data-price="39.99">Add to Cart</button>
+</div>
+
+<div class="product-card" data-category="women">
+  <img src="images/shirt3.jpg" alt="Shirt 3" />
+  <h3>Shirt 3</h3>
+  <p>$49.99</p>
+  <button class="add-to-cart" data-name="The expecive one" data-price="49.99">Add to Cart</button>
+</div>
+
+<div class="product-card" data-category="men">
+  <img src="images/shirt4.jpg" alt="Shirt 4" />
+  <h3>Shirt 4</h3>
+  <p>$25.99</p>
+  <button class="add-to-cart" data-name="Cool Shirt no?" data-price="25.99">Add to Cart</button>
+</div>
+<!--Pants-->
+<div class="product-card" data-category="men">
+  <img src="images/pants1.jpg" alt="Pants 1" />
+  <h3>Pants 1</h3>
+  <p>$22.99</p>
+  <button class="add-to-cart" data-name="This is Pant ;)" data-price="22.99">Add to Cart</button>
+</div>
+<div class="product-card" data-category="men">
+  <img src="images/pants2.jpg" alt="Pants 2" />
+  <h3>Pants 2</h3>
+  <p>$23.99</p>
+  <button class="add-to-cart" data-name="Good choice man" data-price="23.99">Add to Cart</button>
+</div>
+<div class="product-card" data-category="women">
+  <img src="images/pants3.png" alt="Pants 3" />
+  <h3>Pants 3</h3>
+  <p>$22.99</p>
+  <button class="add-to-cart" data-name="Nice legs <3 " data-price="22.99">Add to Cart</button>
+</div>
+<!--Jacket-->
+<div class="product-card" data-category="women">
+  <img src="images/jacket1.jpg" alt="Jacket 1" />
+  <h3>Jacket 1</h3>
+  <p>$69.99</p>
+  <button class="add-to-cart" data-name="She is pretty u w u" data-price="69.99">Add to Cart</button>
+</div>
+<div class="product-card" data-category="new">
+  <img src="images/jacket2.jpg" alt="Jacket 2" />
+  <h3>Jacket 2</h3>
+  <p>$50.99</p>
+  <button class="add-to-cart" data-name="Godly Jacket :0" data-price="50.99">Add to Cart</button>
+</div>
+<div class="product-card" data-category="men">
+  <img src="images/jacket3.jpg" alt="Jacket 3" />
+  <h3>Jacket 3</h3>
+  <p>$52.99</p>
+  <button class="add-to-cart" data-name="Wow Jacket ;) " data-price="52.99">Add to Cart</button>
+</div>
+
+
+  </section>
+
+</body>
+</html>
