@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/Home/images/favicon.png">
   <title>HanaHanabi | Home</title>
   <link rel="stylesheet" href="css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -18,7 +19,7 @@
     <div class="logo">HanaHanabi</div>
     <nav class="nav-links">
       <a href="index.html">Home</a>
-      <a href="shop.html">Shop</a>
+      <a href="/Products/products.html">Shop</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
       <a href="login.html">Login</a>
@@ -133,6 +134,24 @@
     <p>&copy; 2025 HanaHanabi. All rights reserved.</p>
   </footer>
   
+  <button id="goTopBtn" title="Go to top">↑ Top</button>
+<script>
+  let goTopBtn = document.getElementById("goTopBtn");
+
+  window.addEventListener("scroll", function() {
+    if (document.documentElement.scrollTop > 100) {
+      goTopBtn.style.display = "block";
+      goTopBtn.style.opacity = "1";
+    } else {
+      goTopBtn.style.opacity = "0";
+      setTimeout(() => { goTopBtn.style.display = "none"; }, 300);
+    }
+  });
+
+  goTopBtn.addEventListener("click", function() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
 
 
 </body>
