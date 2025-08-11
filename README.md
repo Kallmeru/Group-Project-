@@ -1,2 +1,1 @@
-# Group-Project- Group-I
-Our Assignment 
+This is the group project for clothing website called HanaHanbi !
